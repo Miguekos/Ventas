@@ -175,6 +175,7 @@ $tcaja = $tcajasuma - $tcajaresta;
     </div>
       <ul class="nav navbar-nav">
         <li class="<?php echo $ventas; ?>"><a href="ventas">Facturas</a></li>
+        <li class=""><a href="abonomembresias">Control Membresias</a></li>
         <li class="<?php echo $filtropordia; ?>"><a href="filtropordia">Filtrar por Dias</a></li>
         <li class="<?php echo $otro; ?> dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Otros <b class="caret"></b></a>

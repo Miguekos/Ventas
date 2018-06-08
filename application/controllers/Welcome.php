@@ -43,6 +43,10 @@ class Welcome extends CI_Controller {
 		$this->load->view('templates/footer');
 	}
 
+	public function escritorio(){
+		$this->load->view('escritorio');
+	}
+
 	public function getitem()
 	{	
 		// $this->load->view('templates/header');

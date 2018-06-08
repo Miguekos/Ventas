@@ -23,7 +23,7 @@
 ?>
 
 <div id="container">
-    <h1 id="h2Caja">Abonos<i class="pull-right"></i></h1>
+    <h1 id="h2Caja">Control de Pagos Membresias<i class="pull-right"></i></h1>
     <!-- <h1 id="h2Caja">Ventas<i class="pull-right"><?php echo "Total en soles de la Busqueda: <b>".number_format($filtrarD3, 2, ',', '.') ." S/</b>"; ?></i></h1> -->
     
     <div id="body"> 
@@ -33,8 +33,9 @@
             <table id="example" class="table table-striped table-bordered" style="width:100%">
             <thead>
             <tr>
-                <th class="text-center">N. Factura</th>
-                <th class="text-center">Producto</th>
+                <th class="text-center">#</th>
+                <th class="text-center">Nombre</th>
+                <th class="text-center">DNI</th>
                 <th class="text-center">Cancelado</th>
                 <th class="text-center">Deuda</th>
                 <th class="text-center">Abono</th>
@@ -48,6 +49,7 @@
                 echo "<tr>";
                 echo "<td class='text-center'>".$row->id."</td>";
                 echo "<td class='text-center'>".$row->nombre."</td>";
+                echo "<td class='text-center'>".$row->dni."</td>";
                 echo "<td class='text-center'>".$row->pago."</td>";
                 echo "<td class='text-center'>".$row->deuda."</td>";
                 echo "<td class='text-center'>".$row->abono."</td>";
